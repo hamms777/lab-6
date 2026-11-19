@@ -1,0 +1,393 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Purr & Pour Cafe</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar md:navbar-expand bg-1 border-bottom">
+    <div class="container">
+
+      <a class="navbar-brand" href="index.html">
+        Purr & Pour Cafe
+      </a>
+
+      <button class="btn-icon navbar-toggler"
+        type="button"
+        data-bs-toggle="drawer"
+        data-bs-target="#menu"
+        aria-controls="menu"
+        aria-expanded="false"
+        aria-label="Open menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <dialog class="drawer drawer-end" id="menu"
+        aria-labelledby="menuTitle">
+
+        <div class="drawer-header">
+          <h2 class="drawer-title h5" id="menuTitle">Menu</h2>
+          <button class="btn-close" type="button"
+            data-bs-dismiss="drawer"
+            aria-label="Close menu"></button>
+        </div>
+
+        <div class="drawer-body">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page"
+                href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Our Story</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </dialog>
+
+    </div>
+  </nav>
+
+  <main class="container py-5">
+
+    <!-- PAGE HEADING -->
+    <header class="text-center mb-5">
+      <h1>Welcome to Purr & Pour Cafe</h1>
+      <p class="lead">
+        A cozy place for coffee, cats, and happiness.
+      </p>
+    </header>
+
+    <!-- CAROUSEL -->
+    <section class="mb-5" aria-label="Featured cats">
+
+      <h2>Meet Our Cats</h2>
+
+      <div id="catCarousel" class="carousel slide">
+
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <img src="Images/images/cat1.svg"
+              class="d-block w-100"
+              alt="Mochi the brown cafe cat">
+          </div>
+
+          <div class="carousel-item">
+            <img src="Images/images/cat2.svg"
+              class="d-block w-100"
+              alt="Luna the playful cat">
+          </div>
+
+          <div class="carousel-item">
+            <img src="Images/images/cat3.svg"
+              class="d-block w-100"
+              alt="Biscuit the sleepy cat">
+          </div>
+
+        </div>
+
+        <button class="btn-icon" type="button"
+          data-bs-target="#catCarousel"
+          data-bs-slide="prev"
+          aria-label="Previous slide">
+          Previous
+        </button>
+
+        <button class="btn-icon" type="button"
+          data-bs-target="#catCarousel"
+          data-bs-slide="next"
+          aria-label="Next slide">
+          Next
+        </button>
+
+      </div>
+    </section>
+
+    <!-- SIX CAT CARDS -->
+    <section>
+      <h2 class="mb-4">More Adorable Friends</h2>
+
+      <div class="row g-4">
+
+        <!-- CARD 1 -->
+        <div class="col-12 md:col-6 lg:col-4">
+          <article class="card h-100">
+            <img src="Images/images/cat1.svg"
+              class="card-img-top"
+              alt="Mochi the brown cat">
+
+            <div class="card-body">
+              <h3 class="card-title h5">Mochi</h3>
+              <p>Mochi loves sunshine and afternoon naps.</p>
+
+              <details>
+                <summary>Details</summary>
+                <p>Mochi enjoys sitting by the window.</p>
+              </details>
+
+              <button class="btn-solid theme-primary"
+                type="button"
+                data-bs-toggle="dialog"
+                data-bs-target="#dialog1">
+                Meet Mochi
+              </button>
+
+              <dialog class="dialog" id="dialog1"
+                aria-labelledby="title1">
+                <div class="dialog-header">
+                  <h4 id="title1">Mochi</h4>
+                </div>
+                <div class="dialog-body">
+                  <p>Mochi is our calmest cafe cat.</p>
+                </div>
+                <div class="dialog-footer">
+                  <button class="btn-solid theme-primary"
+                    type="button" data-bs-dismiss="dialog">
+                    Close
+                  </button>
+                </div>
+              </dialog>
+
+            </div>
+          </article>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="col-12 md:col-6 lg:col-4">
+          <article class="card h-100">
+            <img src="Images/images/cat2.svg"
+              class="card-img-top"
+              alt="Luna the playful cat">
+
+            <div class="card-body">
+              <h3 class="card-title h5">Luna</h3>
+              <p>Luna enjoys playing and meeting visitors.</p>
+
+              <details>
+                <summary>Details</summary>
+                <p>Luna loves chasing feather toys.</p>
+              </details>
+
+              <button class="btn-solid theme-primary"
+                type="button"
+                data-bs-toggle="dialog"
+                data-bs-target="#dialog2">
+                Meet Luna
+              </button>
+
+              <dialog class="dialog" id="dialog2"
+                aria-labelledby="title2">
+                <div class="dialog-header">
+                  <h4 id="title2">Luna</h4>
+                </div>
+                <div class="dialog-body">
+                  <p>Luna is our most energetic cat.</p>
+                </div>
+                <div class="dialog-footer">
+                  <button class="btn-solid theme-primary"
+                    type="button" data-bs-dismiss="dialog">
+                    Close
+                  </button>
+                </div>
+              </dialog>
+
+            </div>
+          </article>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="col-12 md:col-6 lg:col-4">
+          <article class="card h-100">
+            <img src="Images/images/cat3.svg"
+              class="card-img-top"
+              alt="Biscuit the sleepy cat">
+
+            <div class="card-body">
+              <h3 class="card-title h5">Biscuit</h3>
+              <p>Biscuit loves cozy blankets and naps.</p>
+
+              <details>
+                <summary>Details</summary>
+                <p>Biscuit sleeps in the softest chair.</p>
+              </details>
+
+              <button class="btn-solid theme-primary"
+                type="button"
+                data-bs-toggle="dialog"
+                data-bs-target="#dialog3">
+                Meet Biscuit
+              </button>
+
+              <dialog class="dialog" id="dialog3"
+                aria-labelledby="title3">
+                <div class="dialog-header">
+                  <h4 id="title3">Biscuit</h4>
+                </div>
+                <div class="dialog-body">
+                  <p>Biscuit is our professional nap expert.</p>
+                </div>
+                <div class="dialog-footer">
+                  <button class="btn-solid theme-primary"
+                    type="button" data-bs-dismiss="dialog">
+                    Close
+                  </button>
+                </div>
+              </dialog>
+
+            </div>
+          </article>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="col-12 md:col-6 lg:col-4">
+          <article class="card h-100">
+            <img src="Images/images/cat4.svg"
+              class="card-img-top"
+              alt="Olive the friendly cat">
+
+            <div class="card-body">
+              <h3 class="card-title h5">Olive</h3>
+              <p>Olive welcomes everyone to the cafe.</p>
+
+              <details>
+                <summary>Details</summary>
+                <p>Olive loves greeting new visitors.</p>
+              </details>
+
+              <button class="btn-solid theme-primary"
+                type="button"
+                data-bs-toggle="dialog"
+                data-bs-target="#dialog4">
+                Meet Olive
+              </button>
+
+              <dialog class="dialog" id="dialog4"
+                aria-labelledby="title4">
+                <div class="dialog-header">
+                  <h4 id="title4">Olive</h4>
+                </div>
+                <div class="dialog-body">
+                  <p>Olive is our friendly little greeter.</p>
+                </div>
+                <div class="dialog-footer">
+                  <button class="btn-solid theme-primary"
+                    type="button" data-bs-dismiss="dialog">
+                    Close
+                  </button>
+                </div>
+              </dialog>
+
+            </div>
+          </article>
+        </div>
+
+        <!-- CARD 5 -->
+        <div class="col-12 md:col-6 lg:col-4">
+          <article class="card h-100">
+            <img src="Images/images/cat5.svg"
+              class="card-img-top"
+              alt="Peaches the gentle cat">
+
+            <div class="card-body">
+              <h3 class="card-title h5">Peaches</h3>
+              <p>Peaches loves cuddles and peaceful spaces.</p>
+
+              <details>
+                <summary>Details</summary>
+                <p>Peaches enjoys gentle head scratches.</p>
+              </details>
+
+              <button class="btn-solid theme-primary"
+                type="button"
+                data-bs-toggle="dialog"
+                data-bs-target="#dialog5">
+                Meet Peaches
+              </button>
+
+              <dialog class="dialog" id="dialog5"
+                aria-labelledby="title5">
+                <div class="dialog-header">
+                  <h4 id="title5">Peaches</h4>
+                </div>
+                <div class="dialog-body">
+                  <p>Peaches is our sweetest little dreamer.</p>
+                </div>
+                <div class="dialog-footer">
+                  <button class="btn-solid theme-primary"
+                    type="button" data-bs-dismiss="dialog">
+                    Close
+                  </button>
+                </div>
+              </dialog>
+
+            </div>
+          </article>
+        </div>
+
+        <!-- CARD 6 -->
+        <div class="col-12 md:col-6 lg:col-4">
+          <article class="card h-100">
+            <img src="Images/images/cat6.svg"
+              class="card-img-top"
+              alt="Clover the curious cat">
+
+            <div class="card-body">
+              <h3 class="card-title h5">Clover</h3>
+              <p>Clover enjoys climbing and exploring.</p>
+
+              <details>
+                <summary>Details</summary>
+                <p>Clover loves climbing the cat tree.</p>
+              </details>
+
+              <button class="btn-solid theme-primary"
+                type="button"
+                data-bs-toggle="dialog"
+                data-bs-target="#dialog6">
+                Meet Clover
+              </button>
+
+              <dialog class="dialog" id="dialog6"
+                aria-labelledby="title6">
+                <div class="dialog-header">
+                  <h4 id="title6">Clover</h4>
+                </div>
+                <div class="dialog-body">
+                  <p>Clover is our curious little explorer.</p>
+                </div>
+                <div class="dialog-footer">
+                  <button class="btn-solid theme-primary"
+                    type="button" data-bs-dismiss="dialog">
+                    Close
+                  </button>
+                </div>
+              </dialog>
+
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-1 text-center py-4">
+    <p>Purr & Pour Cafe | Made with Love</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+
+/* CCT360 LAB 6 - PASTEL CAT CAFE */
+
+:root {
+  --bs-primary-base: #87546b;
+  --bs-primary-bg: #87546b;
+  --bs-primary-fg: #87546b;
+  --bs-primary-border: #bd91a5;
+  --bs-primary-contrast: #ffffff;
+  --bs-primary-bg-subtle: #f6e4eb;
+  --bs-primary-focus-ring: #bd91a5;
+  --bs-bg-body: #fff9f6;
+}
+
+.btn-solid.theme-primary {
+  background-color: #87546b;
+  color: white;
+  border-color: #87546b;
+}
+
+.btn-solid.theme-primary:hover {
+  background-color: #6c3c51;
+  color: white;
+  border-color: #6c3c51;
+}
+
+.navbar-brand {
+  color: #87546b;
+}
